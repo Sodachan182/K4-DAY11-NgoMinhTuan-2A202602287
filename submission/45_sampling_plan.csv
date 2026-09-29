@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,20,baseline_center_mid_edge,Proposed baseline phủ center mid edge trong cảnh rõ và mật độ thường; dùng để so với hard chứ không suy tỷ lệ lỗi từ B4-dense
+front,hard,30,missing_H40_class_geometry,Proposed ưu tiên cảnh dày ở mid edge; vật sát H=40; missing Pedestrian hoặc Bike; class ambiguity và geometry disagreement; review bằng ảnh gốc thay vì ép theo reference hoặc model
+rear,normal,20,baseline_scope_attributes,Proposed baseline phủ ba radial zone với object rõ; kiểm class box và attribute trong điều kiện ít che khuất
+rear,hard,30,unreadable_ignore_occlusion,Proposed ưu tiên blur và unreadable; ignore_region; ego_body hoặc lens_border; object gần camera; truncated và occluded; mọi ca scope P0 được human review
+left,normal,20,baseline_radial_coverage,Proposed baseline lấy cảnh và thời điểm tách nhau; phủ center mid edge để đối chứng với méo ở rìa
+left,hard,30,seam_edgezone_k12,Proposed ưu tiên seam và edge fisheye; edge_zone theo r trên R; geometry cong; missing nhỏ; K12 rectangle polygon và group_id nếu task có K12
+right,normal,20,baseline_radial_coverage,Proposed baseline lấy cảnh và thời điểm tách nhau; phủ center mid edge và class thông dụng
+right,hard,30,seam_unreadable_disagreement,Proposed ưu tiên seam; unreadable hoặc ignore; class và geometry mơ hồ; edge_zone; K12 group; disagreement annotator reference model phải chuyển human review hoặc escalation

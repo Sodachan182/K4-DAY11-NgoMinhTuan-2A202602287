@@ -1,0 +1,21 @@
+{
+  "members": {
+    "duy": {
+      "full_name": "Lại Hoàng Duy",
+      "student_id": "2A202602271"
+    },
+    "nghia": {
+      "full_name": "Lê Hữu Nghĩa",
+      "student_id": "2A202602285"
+    },
+    "tuan": {
+      "full_name": "Ngô Minh Tuấn",
+      "student_id": "2A202602287"
+    }
+  },
+  "qa_reviews": {
+    "duy": "nghia",
+    "nghia": "tuan",
+    "tuan": "duy"
+  }
+}

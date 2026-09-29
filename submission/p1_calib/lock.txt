@@ -1,0 +1,9 @@
+round: calib
+slice: C0
+sha256: bbca0b7c2b9fb93e10940fda219cf8f7ae3c0446598e8153fb066933e61b64f9
+code: BBCA-0B7C
+locked_at: 2026-09-29T10:55:46+07:00
+shapes: box=6, polygon=3
+prefill_kept: 0
+prefill_edited: 0
+new: 6

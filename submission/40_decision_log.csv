@@ -1,1 +1,6 @@
 id,date,question,decision,rationale,status
+D01,2026-09-29,Pedestrian R7 ở adasind_258420.jpg có phải object hợp lệ cần box không,Rework thêm Pedestrian,Object nhìn thấy trong vùng hợp lệ và cao từ 40 px; R01 yêu cầu annotate,completed
+D02,2026-09-29,L5 Car ở adasind_270517.jpg có đủ bằng chứng class không,Xóa box Car và dùng unreadable khi vùng thật sự không đọc được,Ảnh quá mờ để khẳng định Car; R06 và R09 không cho ép class trong ignore,partial
+D03,2026-09-29,Ba Pedestrian ở adasind_310008.jpg có thuộc radial edge không,Đặt edge_zone=true cho cả ba,Tâm box có r trên R từ 0.6 trở lên; XML rework xác nhận attribute true,completed
+D04,2026-09-29,Có nên xóa L3 L7 Bike hoặc ép L8 Car theo reference/model không,Tạm giữ annotation và chuyển lead xác nhận,Ảnh gốc còn hỗ trợ object; teaching reference và model không phải gold; xem 30_escalation_ticket.md,escalated
+D05,2026-09-29,Bike R7 ở adasind_270517.jpg đã có trong bản rework khóa chưa,Cần rework và export lại Bike,Reference và model cùng chỉ ra object đủ H nhưng annotations-v2.xml hiện chưa có box; xem screenshot 270517,pending
